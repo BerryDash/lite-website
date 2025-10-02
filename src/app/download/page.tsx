@@ -6,11 +6,6 @@ import axios from 'axios'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/link'
-import { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: 'Berry Dash Lite - Download'
-}
 
 export default function Download () {
   const [platform, setPlatform] = useState<string | null>(null)
