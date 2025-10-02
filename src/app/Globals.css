@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+body {
+  @apply bg-black text-white select-none flex items-center justify-center min-h-screen;
+}
+
+.content-box {
+  @apply bg-[rgb(16,16,16)] w-auto h-auto rounded-lg p-8 border border-[rgb(32,32,32)] shadow shadow-black;
+}
+
+.button {
+  @apply bg-[rgb(24,24,24)] border border-[rgb(48,48,48)] hover:bg-[rgb(32,32,32)] hover:border-[rgb(56,56,56)] rounded-lg px-4 py-2 text-white hover:font-bold hover:underline transition-all cursor-pointer;
+}
+
+.back-button {
+  @apply w-4 h-4 p-2 bg-[rgb(24,24,24)] border border-[rgb(48,48,48)] rounded-full cursor-pointer;
+}
