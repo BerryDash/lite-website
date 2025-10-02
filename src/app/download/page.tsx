@@ -124,7 +124,7 @@ export default function Download () {
                 ) : platform == 'iOS' ? (
                   <Link
                     className='download-option button'
-                    href={`https://archive.org/download/berry-dash-archive/Berry-Dash-${latestVersion}-ios.ipa`}
+                    href={`https://archive.org/download/berry-dash-archive/Berry-Dash-Lite-${latestVersion}-ios.ipa`}
                     target='_blank'
                   >
                     iOS
@@ -132,7 +132,7 @@ export default function Download () {
                 ) : platform == 'Android' ? (
                   <Link
                     className='download-option button'
-                    href={`https://archive.org/download/berry-dash-archive/Berry-Dash-${latestVersion}-android.apk`}
+                    href={`https://archive.org/download/berry-dash-archive/Berry-Dash-Lite-${latestVersion}-android.apk`}
                     target='_blank'
                   >
                     Android (arm32, arm64)
