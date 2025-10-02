@@ -19,13 +19,19 @@ export default function Download () {
     const fetchVersions = async () => {
       try {
         const gameRes = await axios.get(
-          'https://berrydashlite.lncvrt.xyz/database/getLatestVersion.php'
+          'https://berrydashlite.lncvrt.xyz/database/getLatestVersion.php',
+          {
+            responseType: 'text'
+          }
         )
         const launcherRes = await axios.get(
-          'https://berrydash.lncvrt.xyz/database/launcher/latest.php'
+          'https://berrydash.lncvrt.xyz/database/launcher/latest.php',
+          {
+            responseType: 'text'
+          }
         )
-        setLatestVersion(gameRes.data)
-        setLatestLauncherVersion(launcherRes.data)
+        setLatestVersion((gameRes.data as string).trim())
+        setLatestLauncherVersion((launcherRes.data as string).trim())
       } catch {
         setLatestCheckFailed(true)
       }
